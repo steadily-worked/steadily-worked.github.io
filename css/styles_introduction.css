@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Apple SD Gothic Neo';
+    margin: 0 auto;
+    width: 700px;
+}
+.sangmin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: right;
+    width: 250px;
+    height: 300px;
+}
+.title {
+    color: #2a2a2a;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 50px;
+}
+.title > a {
+    text-decoration: none;
+    color: #2a2a2a;
+}
+/* mission */
+.mission {
+    color: #2b2b2b;
+    margin-top: 46px;
+    margin-bottom: 50px;
+}
+.mission-title, .members-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+.mission-explanation, .mission-explanation2 {
+    font-size: 18px;
+    line-height: 27px;
+}
+.mission-explanation2 {
+    padding-left: 20px;
+}
+/* how */
+.how {
+    color: #2b2b2b;
+    margin-bottom: 50px;
+}
+
+/* focus */
+.focus {
+    color: #2b2b2b;
+    margin-bottom: 46px;
+}
+
+/* plans */
+.plans {
+    color: #2b2b2b;
+    margin-bottom: 53px;
+}
+
+@media (max-width: 768px) {
+    /* body */
+    body {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* title */
+    .title {
+        margin-top: 24px;
+        font-size: 26px;
+        letter-spacing: -0.36px;
+    }
+    /* mission */
+    .mission {
+        margin-top: 30px;
+        margin-bottom: 24px;
+    }
+    .mission-title {
+        margin-bottom: 11px;
+        font-size: 20px;
+    }
+    .mission-explanation {
+        font-size: 16px;
+    }
+    .mission-explanation2 {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .mission-li {
+        font-size: 16px;
+    }
+    /* how */
+    .how {
+        margin-bottom: 22px;
+    }
+    /* focus */
+    .focus > .mission-title {
+        padding-left: 0px;
+        margin-bottom: 11px;
+    }
+    .focus {
+        margin-bottom: 24px;
+    }
+    /* plans */
+    .plans {
+        margin-bottom: 26px;
+    }
+}
