@@ -46,9 +46,12 @@ body {
 /* how */
 .how {
     color: #2b2b2b;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
-
+/* language */
+.language {
+    margin-bottom: 46px;
+}
 /* focus */
 .focus {
     color: #2b2b2b;
