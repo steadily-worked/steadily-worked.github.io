@@ -8,6 +8,7 @@
     <link href='css/styles_introduction.css' rel='stylesheet'>
  </head>
  <body>
+     <div class='main'>
      <div class='title'><a href="https://github.com/steadily-worked">Sangmin Park</a></div>
      <img class="sangmin" src="images/sangmin.jpeg">
      <div class="explanation">
@@ -27,6 +28,7 @@
          <ul class='mission-explanation2'>
              <li>HTML/CSS</li>
              <li>Python</li>
+             <li>Pandas</li>
              <li>JavaScript</li>
              <li>jQuery</li>
          </ul>
@@ -38,7 +40,6 @@
             <li>프론트엔드 분야를 공부하여 같이 코딩을 공부하는 팀원들과 함께 <a href="https://showmethatcode.team/doggy">댕댕이 찾기</a>를 만들었습니다.</li>
             <li>2020년에 <a href="https://likelion.net">코딩 동아리</a>에 들어가서 데이터 사이언스 공부와 아이디어 관련 세션을 진행하고 있습니다.</li>
          </ul>
-        </div>
      </div>
      <div class='plans'>
          <div class='mission-title'>🏃‍♂️ Plans</div>
@@ -54,6 +55,7 @@
              <li>SNS는 안하지만 <a href="https://github.com/steadily-worked">GitHub</a>에는 꾸준히 커밋중입니다 😄</li>
          </ul>
      </div>
+    </div>
      <div>
          <span class='topBtn'>Top</span>
      </div>
@@ -63,6 +65,17 @@
     var delay = 600;
     topEle.on('click',function() {
         $('html, body').stop().animate({scrollTop: 0}, delay);
+    });
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            $('.main').each(function(i) {
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object/2 ){
+                $(this).animate({'opacity':'1'},500);
+                }
+            });
+        });
     });
 </script>
  </body>
