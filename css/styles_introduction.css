@@ -65,6 +65,23 @@ body {
     margin-bottom: 53px;
 }
 
+.topBtn {
+    position: fixed;
+    float: right;
+    right: 2%;
+    bottom: 2%;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     /* body */
     body {

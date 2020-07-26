@@ -54,5 +54,16 @@
              <li>SNS는 안하지만 <a href="https://github.com/steadily-worked">GitHub</a>에는 꾸준히 커밋중입니다 😄</li>
          </ul>
      </div>
+     <div>
+         <span class='topBtn'>Top</span>
+     </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+    var topEle = $('.topBtn');
+    var delay = 600;
+    topEle.on('click',function() {
+        $('html, body').stop().animate({scrollTop: 0}, delay);
+    });
+</script>
  </body>
 </html>
