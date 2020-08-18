@@ -69,6 +69,7 @@
     topEle.on('click',function() {
         $('html, body').stop().animate({scrollTop: 0}, delay);
     });
+    const PullToRefresh = require('pulltorefreshjs');
     const ptr = PullToRefresh.init({
         mainElement: 'body',
         onRefresh() {
