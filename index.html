@@ -72,10 +72,12 @@
     const PullToRefresh = require('pulltorefreshjs');
     const ptr = PullToRefresh.init({
         mainElement: 'body',
-        onRefresh() {
-            window.location.reload();
+        onRefresh: function(done) {
+            setTimeout(function() {
+                done();
+                alert('refresh');
+            }, 1500);
         }
-        alert('refresh');
     });
 
 
