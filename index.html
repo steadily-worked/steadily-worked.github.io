@@ -61,23 +61,23 @@
          <span class='topBtn'>Top</span>
      </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.js'></script>
 <script>
     var topEle = $('.topBtn');
     var delay = 600;
     topEle.on('click',function() {
         $('html, body').stop().animate({scrollTop: 0}, delay);
     });
-    // $(document).ready(function() {
-    //     $(window).scroll(function() {
-    //         $('.main').each(function(i) {
-    //             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-    //             var bottom_of_window = $(window).scrollTop() + $(window).height();
-    //             if( bottom_of_window > bottom_of_object/2 ){
-    //             $(this).animate({'opacity':'1'},500);
-    //             }
-    //         });
-    //     });
-    // });
+    const PullToRefresh = require('pulltorefreshjs');
+    const ptr = PullToRefresh.init({
+        mainElement: 'body',
+        onRefresh() {
+            window.location.reload();
+        }
+    });
+
+
 </script>
  </body>
 </html>
