@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link href='css/styles_introduction.css' rel='stylesheet'>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.min.js" integrity="sha512-P5gzVTkY5AyMpwWEMaX9lnqzRdVF1x+YjUeAmOT+xGVxhe28aJz4qHZEY+HyTNcs4Xmt89D/wbCltIvSTzlscA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.js" integrity="sha512-y/blgeYWYV+YuZe9jk/zhbWvf5XmKvhDfprmO1wkbhZ+cymqFW7uHMHFmHyUMVo+3vsuQVhocGL0DB6omBVbiA==" crossorigin="anonymous"></script>
  </head>
  <body>
      <div class='main'>
@@ -69,7 +69,6 @@
     topEle.on('click',function() {
         $('html, body').stop().animate({scrollTop: 0}, delay);
     });
-    const PullToRefresh = require('pulltorefreshjs');
     const ptr = PullToRefresh.init({
         mainElement: 'body',
         onRefresh() {
@@ -77,7 +76,7 @@
         }
     });
 
-
 </script>
+
  </body>
 </html>
